@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Your Meal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          <img src="favicon.ico" alt="" / style="margin-left: 8px;margin-right: 8px;">   Create Your Meal
+        </div>
+        <div>
+          <input class="search-field" type="text" id="search" />
+          <input class="search-field" type="button" value="search" onclick="searchMeal()"/>
+        </div>
+      </div>
+    </header>
+    <section class="body">
+      <div class="title">
+        Meal Name:
+        <article id="mealTitle"></article>
+      </div>
+      <div class="meal-body">
+        <div id="instruction">
+          <p id="instruction-para"></p>
+          <table id="ing-table" border="1">
+            <thead>
+              <tr>
+                <th>Ingredients</th>
+                <th>Quantity</th>
+              </tr>
+            </thead>
+            <tbody id="table-body">
+            </tbody>
+          </table>
+        </div>
+        <div id="mealPic">
+        </div>
+      </div>
+      <div >
+          <img id="loader" src="wait.gif" alt="" >
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
